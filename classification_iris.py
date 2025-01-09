@@ -33,9 +33,9 @@ print("Proba pour l'échantillon 50 :", clf.predict_proba([X[50, :]])[0][1])
 # Calcul des probabilités prédites sur le jeu de test et visualisation des probabilités pour la classe 1 (toxic)
 y_hat_proba = clf.predict_proba(X_test)[:,1]
 sns.histplot(y_hat_proba, kde=True, bins = 30, color = 'blue')
-plt.title("Classe d'iris toxique")
-plt.xlabel("Probabilité")
-plt.ylabel("Fréquence")
+plt.title("Distribution des proba prédites pour la Classe d'iris toxique")
+plt.xlabel("Probabilité prédite")
+plt.ylabel("nombre d'échantillons")
 plt.show()
 
 # Mesure de la précision globale du modèle en calculant l'accuracy sur le jeu de test
