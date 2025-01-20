@@ -11,6 +11,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
 
+
+
 # ** Chargement des données **
 # `X` contient les données (caractéristiques) et `y` contient les étiquettes (diagnostics : 0 ou 1).
 X, y = load_breast_cancer(return_X_y=True)
@@ -102,3 +104,4 @@ plt.xlabel('Taux de faux positifs (FPR)')
 plt.ylabel('Taux de vrais positifs (TPR)')
 plt.legend()
 plt.show()
+
